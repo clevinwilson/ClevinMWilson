@@ -71,12 +71,16 @@ Author URL: http://w3layouts.com
                <div class="contacts12-main col-lg-6 ">
                    
                 <form id="gform" action="https://script.google.com/macros/s/AKfycbysaXVosazV405p8g3nYW9yBjfbpyKh4-u6CHjYgA/exec" method="post" class="main-input">
-                   <label for="fname">First Name</label>
-              <input type="text" id="fname" name="name" placeholder="Your name..">
-              <label for="lname">Email</label>
-              <input type="text" id="lname" name="email" placeholder="Your last name..">
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                    <div class="top-inputs d-grid">
+                        <input type="text" placeholder="Name" name="name" id="name" required="">
+
+                    </div>
+                    <input type="email" name="email" placeholder="Email" id="email" required="">
+
+                    <textarea placeholder="Message" name="message" id="message" required=""></textarea>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-theme2">Submit Now</button>
+                    </div>
                 </form>
             </div>
             <!-- //contact form -->
