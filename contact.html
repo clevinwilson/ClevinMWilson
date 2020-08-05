@@ -71,7 +71,7 @@ Author URL: http://w3layouts.com
                <!-- contact form -->
                <div class="contacts12-main col-lg-6 ">
                    
-                <form id="submit-form" method="post"action="https://script.google.com/macros/s/AKfycbysaXVosazV405p8g3nYW9yBjfbpyKh4-u6CHjYgA/exec" class="main-input">
+                <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbysaXVosazV405p8g3nYW9yBjfbpyKh4-u6CHjYgA/exec" class="main-input">
                     <div class="top-inputs d-grid">
                         <input type="text" placeholder="Name" name="name" id="name" required="">
 
@@ -80,7 +80,7 @@ Author URL: http://w3layouts.com
 
                     <textarea placeholder="Message" name="message" id="message" required=""></textarea>
                     <div class="text-right">
-                        <button type="submit" class="btn btn-theme2">Submit Now</button>
+                        <button type="submit" class="btn btn-theme2" onclick="fsubmit()" >Submit Now</button>
                     </div>
                 </form>
             </div>
@@ -212,23 +212,10 @@ Author URL: http://w3layouts.com
 
 <!-- Smooth scrolling -->
    <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbysaXVosazV405p8g3nYW9yBjfbpyKh4-u6CHjYgA/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
+        function fsubmit(){
+          alert("Form submitted successfully")
+           window.location.reload()
+        }
     </script>
 
 </body>
