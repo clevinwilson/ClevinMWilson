@@ -70,7 +70,7 @@ Author URL: http://w3layouts.com
                <!-- contact form -->
                <div class="contacts12-main col-lg-6 ">
                    
-                <form id="gform" action="https://script.google.com/macros/s/AKfycbysaXVosazV405p8g3nYW9yBjfbpyKh4-u6CHjYgA/exec" method="post" class="main-input">
+                <form id="submit-form" action="" class="main-input">
                     <div class="top-inputs d-grid">
                         <input type="text" placeholder="Name" name="name" id="name" required="">
 
@@ -210,8 +210,25 @@ Author URL: http://w3layouts.com
   </script>
 
 <!-- Smooth scrolling -->
-
-
+   <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbysaXVosazV405p8g3nYW9yBjfbpyKh4-u6CHjYgA/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 </body>
 
