@@ -13875,13 +13875,10 @@ p.white {
   transition: 0.3s ease-in;
   border-radius: 50px;
   border-radius: var(--border-radius);
-  
-}
-
-.btn-0 {
- 
 
 }
+
+.btn-0 {}
 
 
 .border-btn {
@@ -16398,4 +16395,59 @@ div#small-dialog iframe {
   background-image: linear-gradient(12deg, #8e43e7, #5e82ee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.github-contact {
+  font-size: 35px;
+  border-radius: 50%;
+  transition: all 0.31s
+}
+
+.github-contact:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 10px white;
+
+}
+
+.linkedin-contact {
+  color: #0077b5;
+  font-size: 35px !important;
+  border-radius: 10%;
+  transition: all 0.31s;
+}
+
+.linkedin-contact:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 10px #0077b5;
+
+}
+
+.quotes-wrap {
+  display: block;
+  margin: 0;
+  padding: 40px 30px;
+  position: relative;
+  background: #4c1194;
+   border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  border: none;
+  box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+}
+
+.quotes {
+  font-family: DynaPuff, sans-serif;
+  font-size: 26px;
+  line-height: 1.6;
+  color: white;
+}
+
+.quotes-author {
+  font-size: 18px;
+}
+
+.quotes-author-info {
+  display: flex;
+  justify-content: flex-end;
 }
