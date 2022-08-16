@@ -13668,7 +13668,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 [data-theme="dark"] {
-  --primary-color: #f26b3d;
+  --primary-color: #8e43e7;
   --secondary-color: #273c66;
   --font-color: #afafaf;
   --bg-color: #0b0d0e;
@@ -16387,7 +16387,7 @@ div#small-dialog iframe {
 
 /* header logo */
 .logo-style {
-  background-image: linear-gradient(12deg, #E21143, #FFB03A);
-  -webkit-background-clip: text;
+  background-image: linear-gradient(12deg, #8e43e7, #5e82ee);
+   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
