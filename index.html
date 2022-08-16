@@ -17,6 +17,10 @@ Author URL: http://w3layouts.com
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+
+  <!-- Template SCSS -->
+  <link rel="stylesheet" href="assets/sass/main.css">
+  <script src="https://kit.fontawesome.com/8bfe243007.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -84,9 +88,11 @@ Author URL: http://w3layouts.com
             solutions to
             solve it. I constantly make an effort to create excellent websites with the finest user experience.</p>
           <div class="mt-sm-5 mt-4">
-                    <a class="btn btn-primary btn-style mr-2" href="contact.html"> Hire Me </a>
-                    <a class="btn btn-outline-primary btn-style mr-2" href="#portfolio"> Portfolio </a>
-                </div>
+            <a class="button btn btn-outline-primary btn-style mr-2" href="#portfolio"> 
+            <span>more about me</span>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
         </div>
         <div class="profile-picture-wrap col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-4">
           <div class="img-effect text-lg-center">
@@ -96,6 +102,7 @@ Author URL: http://w3layouts.com
       </div>
     </div>
   </section>
+
   <!-- //banner section -->
 
 
@@ -487,7 +494,7 @@ Author URL: http://w3layouts.com
       </div>
     </div>
 
-   
+
 
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
@@ -730,11 +737,11 @@ Author URL: http://w3layouts.com
         display: flex;
         flex-direction: column-reverse;
       }
-  
+
       .profile-picture-wrap {
         margin-top: 0px !important;
       }
-  
+
       .profile-info {
         margin-top: 40px !important;
       }

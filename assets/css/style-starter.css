@@ -2913,7 +2913,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #8e43e7;
+  /* background-color: #8e43e7; */
   border-color: #8e43e7;
 }
 
@@ -13657,7 +13657,7 @@ a.text-dark:hover, a.text-dark:focus {
   --font-color: #696969;
   --bg-color: #fff;
   --heading-color: #3f3a64;
-  --border-radius: 10px;
+  --border-radius: 50px;
   --border-color: #ddd;
   --border-light: #ddd;
   --nav-color: #292922;
@@ -13873,8 +13873,16 @@ p.white {
   text-transform: capitalize;
   font-weight: 400;
   transition: 0.3s ease-in;
+  border-radius: 50px;
   border-radius: var(--border-radius);
+  
 }
+
+.btn-0 {
+ 
+
+}
+
 
 .border-btn {
   border: 2px solid #fff;
@@ -16388,6 +16396,6 @@ div#small-dialog iframe {
 /* header logo */
 .logo-style {
   background-image: linear-gradient(12deg, #8e43e7, #5e82ee);
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
