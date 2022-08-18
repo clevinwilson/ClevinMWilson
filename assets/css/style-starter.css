@@ -16478,3 +16478,19 @@ div#small-dialog iframe {
     transform: rotate(1359deg);
   }
 }
+
+.facebook-social-icon:hover {
+  color: white !important;
+}
+
+.instagram-social-icon:hover {
+  color: #f70074 !important;
+}
+
+.linkedin-social-icon:hover {
+  color: #0077b5 !important;
+}
+
+.twitter-social-icon:hover {
+  color: #1da1f2 !important;
+}
