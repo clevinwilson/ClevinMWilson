@@ -16495,12 +16495,13 @@ div#small-dialog iframe {
   color: #1da1f2 !important;
 }
 
-.fa-download {
+.fa-download-icon {
   background: #8e43e7;
   padding: 9px;
   border-radius: 50%;
   font-size: 12px;
-  padding-left: 10px;
+  padding-left: 11px;
+  height: 32px;
 }
 
 .download-btn-wrap{
