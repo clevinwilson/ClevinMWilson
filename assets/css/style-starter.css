@@ -16504,7 +16504,51 @@ div#small-dialog iframe {
   height: 32px;
 }
 
-.download-btn-wrap{
+.download-btn-wrap {
   display: flex !important;
   justify-content: space-evenly !important;
 }
+
+/* skill progress bar section */
+
+.outer {
+  width: 91px;
+  height: 91px;
+  position: absolute;
+  /* border: 1px solid blue; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  /* border: 1px solid blue; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10%;
+  stroke-dasharray: 250;
+}
+
+
+
+ 
+
+.skill-title,
+.skill-progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* skill progress bar section */
