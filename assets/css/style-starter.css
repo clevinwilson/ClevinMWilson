@@ -16494,3 +16494,16 @@ div#small-dialog iframe {
 .twitter-social-icon:hover {
   color: #1da1f2 !important;
 }
+
+.fa-download {
+  background: #8e43e7;
+  padding: 9px;
+  border-radius: 50%;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.download-btn-wrap{
+  display: flex !important;
+  justify-content: space-evenly !important;
+}
