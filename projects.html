@@ -132,8 +132,8 @@ Author URL: http://w3layouts.com
             <div class="container py-lg-5">
                 <!-- <h5 class="title-small text-center">My achievements</h5>
                 <h3 class="title-big text-center mb-sm-5 mb-4">Personal Awards</h3> -->
-                <div class="row">
-                    <div class="col-lg-4 mt-4 item">
+                <div class="row ">
+                    <div class="col-lg-4 mt-4 item ">
                         <a onclick="setProjectDetails(0)" class="thumbnail" href="#" data-image-id=""
                             data-toggle="modal" data-title="" data-image="assets/images/moviefliq.jpg"
                             data-target="#image-gallery">
@@ -142,8 +142,65 @@ Author URL: http://w3layouts.com
                         </a>
                     </div>
                     <div class="col-lg-4 mt-4 item">
-                        <a onclick="setProjectDetails(1)" class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                            data-image="assets/images/dreamhaulage1.jpg" data-target="#image-gallery">
+                        <a onclick="setProjectDetails(1)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/achivianode.jpg"
+                            data-target="#image-gallery">
+                            <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
+                                src="assets/images/achivianode.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item">
+                        <a onclick="setProjectDetails(2)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/olxreact.jpg"
+                            data-target="#image-gallery">
+                            <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
+                                src="assets/images/olxreact.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item">
+                        <a onclick="setProjectDetails(3)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/applestorenode.jpg"
+                            data-target="#image-gallery">
+                            <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
+                                src="assets/images/applestorenode.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item ">
+                        <a onclick="setProjectDetails(4)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/disneyreact.jpg"
+                            data-target="#image-gallery">
+                            <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
+                                src="assets/images/disneyreact.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item reveal fade-left">
+                        <a onclick="setProjectDetails(5)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/netflixreact.jpg"
+                            data-target="#image-gallery">
+                            <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
+                                src="assets/images/netflixreact.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item reveal fade-left">
+                        <a onclick="setProjectDetails(6)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/applestorereact.jpg"
+                            data-target="#image-gallery">
+                            <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
+                                src="assets/images/applestorereact.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item reveal fade-left">
+                        <a onclick="setProjectDetails(7)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/ghfnode.jpg"
+                            data-target="#image-gallery">
+                            <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
+                                src="assets/images/ghfnode.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item reveal fade-left">
+                        <a onclick="setProjectDetails(8)" class="thumbnail" href="#" data-image-id=""
+                            data-toggle="modal" data-title="" data-image="assets/images/dreamhaulage1.jpg"
+                            data-target="#image-gallery">
                             <img style="height: 220px; object-fit: cover;" class="img-thumbnail "
                                 src="assets/images/dreamhaulage1.jpg" alt="Another alt text">
                         </a>
@@ -154,31 +211,6 @@ Author URL: http://w3layouts.com
     </section>
     <!-- //achievements block -->
 
-    <script>
-        function setProjectDetails(projectId) {
-            const projects = [
-                {
-                    projectName: "MovieFliq",
-                    projectLink: "https://github.com/clevinwilson/Moviebookings",
-                    projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
-                    projectDescription: "This project aimed to develop an online movie ticket reservation system from a theater near your location."
-                }, 
-                {
-                    projectName: "Dreamhaulage",
-                    projectLink: "https://github.com/clevinwilson/vehicle-rentalsystem",
-                    projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
-                    projectDescription: "Vehicle rental system is a vehicle booking software that provides a complete solution to your day-to-day vehicle booking office running needs "
-                }
-            ]
-
-            document.getElementById("project-title").innerHTML=projects[projectId].projectName
-            document.getElementById("movie-title").innerHTML = projects[projectId].projectName
-            document.getElementById("movie-title").href = projects[projectId].projectLink
-            document.getElementById("project-language").innerHTML = projects[projectId].projectTools
-            document.getElementById("project-description").innerHTML = projects[projectId].projectDescription
-           
-        }
-    </script>
 
     <!-- Footer -->
     <section class="w3l-footer py-sm-5 py-4">
@@ -219,18 +251,18 @@ Author URL: http://w3layouts.com
                         </button>
                     </div>
                     <div class="modal-body">
-                        <h3 id="project-title" class="title-big text-center mb-3">  </h3>
+                        <h3 id="project-title" class="title-big text-center mb-3"> </h3>
                         <p class="movie-title-wrap mb-3">
                             <span class="title-small project-detail-title project-detail-title">Link :</span>
                             <a id="movie-title" class="text-white movie-title"> </a>
                         </p>
                         <p class="project-tools-wrap  mb-3 porject-detail-title" id="project-tools">
-                            <span  class="title-small  project-detail-title">Languages :</span> 
+                            <span class="title-small  project-detail-title">Languages :</span>
                             <span id="project-language" class="project-language"> </span>
                         </p>
                         <p class="project-description-wrap  mb-3">
-                            <span class="title-small project-detail-title">Description :</span> 
-                            <span id="project-description" class="project-description">  </span>
+                            <span class="title-small project-detail-title">Description :</span>
+                            <span id="project-description" class="project-description"> </span>
                         </p>
                         <img id="image-gallery-image" class="img-responsive col-md-12 mt-5 mb-5" src="">
                     </div>
@@ -651,7 +683,136 @@ Author URL: http://w3layouts.com
 
     <!-- reveal animation -->
 
+
+    <!-- project dejails -->
+    <script>
+        function setProjectDetails(projectId) {
+            const projects = [
+                {
+                    projectName: "MovieFliq",
+                    projectLink: "https://github.com/clevinwilson/Moviebookings",
+                    projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
+                    projectDescription: "This project aimed to develop an online movie ticket reservation system from a theater near your location."
+                },
+                {
+                    projectName: "ACHIVIA",
+                    projectLink: "https://aetofficial.in/",
+                    projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
+                    projectDescription: "freelance project for education consultancy"
+                },
+                {
+                    projectName: "OLX",
+                    projectLink: "https://github.com/clevinwilson/React_olx_clone",
+                    projectTools: "React.JS, CSS",
+                    projectDescription: "Olx clone"
+                },
+                {
+                    projectName: "Apple Store",
+                    projectLink: "https://github.com/clevinwilson/appleStore-nodejs",
+                    projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
+                    projectDescription: "Apple Store is a chain of retail stores owned and operated by Apple Inc. These stores sell various Apple products, including Mac personal computers, iPhone smartphones, Apple Watch smart watches."
+                },
+                {
+                    projectName: "Disney Clone",
+                    projectLink: "https://disney-clone-8ad79.firebaseapp.com/",
+                    projectTools: "React.JS, CSS",
+                    projectDescription: "Disney clone"
+                },
+                {
+                    projectName: "Netflix",
+                    projectLink: "https://github.com/clevinwilson/netflix-react",
+                    projectTools: "React.JS, CSS",
+                    projectDescription: "Netflix clone"
+                },
+                {
+                    projectName: "Apple Store using React",
+                    projectLink: "https://github.com/clevinwilson/applestore-react",
+                    projectTools: "React.JS, CSS",
+                    projectDescription: "Apple clone"
+                },
+                {
+                    projectName: "GHF",
+                    projectLink: "https://www.ghfgroups.in/",
+                    projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
+                    projectDescription: "freelance project for education consultancy"
+                },
+                {
+                    projectName: "GHF",
+                    projectLink: "https://github.com/clevinwilson/vehicle-rentalsystem",
+                    projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
+                    projectDescription: "Vehicle rental system is a vehicle booking software that provides a complete solution to your day-to-day vehicle booking office running needs ."
+                }
+            ]
+
+            document.getElementById("project-title").innerHTML = projects[projectId].projectName
+            document.getElementById("movie-title").innerHTML = projects[projectId].projectName
+            document.getElementById("movie-title").href = projects[projectId].projectLink
+            document.getElementById("project-language").innerHTML = projects[projectId].projectTools
+            document.getElementById("project-description").innerHTML = projects[projectId].projectDescription
+
+        }
+    </script>
+
     <!-- bootstrap js -->
+<!-- reveal animation -->
+<style>
+    .reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+</style>
+<script>
+    function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+</script>
+<!-- reveal animation -->
+
     <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
