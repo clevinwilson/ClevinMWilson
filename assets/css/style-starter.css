@@ -16609,3 +16609,13 @@ li.timeline-item::before {
 .theme-background-color {
   background-color: var(--bg-light);
 }
+
+
+/* project list hove */
+.project-img{
+  transition: all .4s;
+} 
+.project-img:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 0px 22px black;
+} 
