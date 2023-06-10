@@ -134,6 +134,29 @@ Author URL: http://w3layouts.com
                 <h3 class="title-big text-center mb-sm-5 mb-4">Personal Awards</h3> -->
                 <div class="row ">
                     <div class="col-lg-4 mt-4 item ">
+                        <a onclick="setProjectDetails(9)" class="thumbnail " href="#" data-image-id="" data-toggle="modal" data-title=""
+                            data-image="assets/images/learnwise.png" data-target="#image-gallery">
+                            <div style="position: relative;" class="project-thumbnail-wrap">
+                                <img style="height: 220px; object-fit: cover;" class="img-thumbnail project-img "
+                                    src="assets/images/learnwise.png" alt="Another alt text">
+                                <div class="project-title-wrap">
+                                    <h4 class="text-white p-2">LearnWise</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-4 mt-4 item ">
+                        <a onclick="setProjectDetails(10)" class="thumbnail " href="#" data-image-id="" data-toggle="modal" data-title=""
+                            data-image="assets/images/Fliqcart.jpg" data-target="#image-gallery">
+                            <div style="position: relative;" class="project-thumbnail-wrap">
+                                <img style="height: 220px; object-fit: cover;" class="img-thumbnail project-img "
+                                    src="assets/images/Fliqcart.jpg" alt="Another alt text">
+                                <div class="project-title-wrap">
+                                    <h4 class="text-white p-2">Fliqcart</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 item ">
                         <a onclick="setProjectDetails(0)" class="thumbnail " href="#" data-image-id=""
                             data-toggle="modal" data-title="" data-image="assets/images/moviefliq.jpg"
                             data-target="#image-gallery">
@@ -733,9 +756,10 @@ Author URL: http://w3layouts.com
     <script>
         function setProjectDetails(projectId) {
             const projects = [
+                
                 {
                     projectName: "MovieFliq",
-                    projectLink: "https://github.com/clevinwilson/Moviebookings",
+                    projectLink: "https://www.movies.fliqcart.me/",
                     projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
                     projectDescription: "This project aimed to develop an online movie ticket reservation system from a theater near your location."
                 },
@@ -786,7 +810,18 @@ Author URL: http://w3layouts.com
                     projectLink: "https://github.com/clevinwilson/vehicle-rentalsystem",
                     projectTools: "Handlebars, CSS, Javascript, Node.Js, Mongo DB",
                     projectDescription: "Vehicle rental system is a vehicle booking software that provides a complete solution to your day-to-day vehicle booking office running needs ."
-                }
+                },
+                {
+                    projectName: "LearnWise",
+                    projectLink: "https://learnwise.tech/",
+                    projectTools: "React js,Socket.io,Redux,Node.Js,Handlebars, CSS, Javascript, Mongo DB",
+                    projectDescription: "LearnWise is an all-encompassing online learning platform that seamlessly blends educational resources with a vibrant community section. Our platform is designed to empower learners of all ages and backgrounds by providing them with a comprehensive and interactive learning experience, as well as a thriving community to connect."
+                }, {
+                    projectName: "Filqcart",
+                    projectLink: "https://www.fliqcart.me/",
+                    projectTools: "Node.Js,Handlebars, CSS, Javascript, Mongo DB",
+                    projectDescription: "FiqCart is an innovative online e-commerce platform that aims to revolutionize the way you shop. With a user-friendly interface, extensive product range, and seamless shopping experience, FiqCart makes online shopping convenient, enjoyable, and hassle-free."
+                },
             ]
 
             document.getElementById("project-title").innerHTML = projects[projectId].projectName
